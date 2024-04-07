@@ -1,23 +1,26 @@
-import React from "react";
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
-import Home from "./pages/home";
-import Login from "./pages/login";
-import Register from "./pages/register";
-import Header from "./nav/header";
+import React, { useState } from 'react';
+import Button from './Button';
+import './App.css';
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Header />}>,
-      <Route index element={<Home />} />,
-      <Route path="/login" element={<Login />} />,
-      <Route path="/register" element={<Register />} />
-    </Route>
-  )
-);
+function App() {
+  const [numClicks, setNumClicks] = useState(0);
 
-function App({routes}) {
+  const incrementNum = () => {
+    setNumClicks(numClicks + 1);
+    console.log('Incrementan num...');
+  };
+
+  const reiniciarNum = () => {
+    setNumClicks(0);
+    console.log('Reiniciar num...');
+  };
+
   return (
-    <RouterProvider router={router} />
+    <div className="App">
+      <h1>Contador de Clics: {numClicks}</h1>
+      <Button text="Clic" onClick={incrementNum} isClick={true} />
+      <Button text="Reiniciar" onClick={reiniciarNum} isClick={false} />
+    </div>
   );
 }
 

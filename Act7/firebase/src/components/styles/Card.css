@@ -1,0 +1,22 @@
+.card-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px; 
+  }
+  
+  Link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2em; 
+  }
+  
+  Link:hover {
+    text-decoration: underline;
+  }
+  
+  

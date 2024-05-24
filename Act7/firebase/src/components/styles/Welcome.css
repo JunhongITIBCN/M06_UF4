@@ -1,0 +1,19 @@
+.welcome-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: rgb(10, 4, 4);
+    font-family: Arial, sans-serif;
+
+  }
+  
+  p {
+    color: rgb(10, 4, 4);
+    font-family: Arial, sans-serif;
+
+  }
+    

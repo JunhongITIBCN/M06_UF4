@@ -1,0 +1,43 @@
+
+/* MoviesList.css */
+
+.movies-list-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    padding: 20px;
+  }
+  
+  .movie-card {
+    width: 300px; /* Ancho fijo para cada tarjeta */
+    margin: 10px; /* Espaciado entre las tarjetas */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ocultar contenido que sobresalga */
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto; /* Mantener la relación de aspecto de la imagen */
+    border-bottom: 1px solid #ddd; /* Línea divisoria debajo de la imagen */
+  }
+  
+  .movie-details {
+    padding: 20px;
+  }
+  
+  .movie-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-rate {
+    font-size: 16px;
+    color: #007bff; /* Color azul para la tasa */
+  }
+  
+  .movie-direction {
+    font-size: 16px;
+    color: #666; /* Color gris para la dirección */
+  }
+  
